@@ -1,0 +1,12 @@
+scenario,attack,protection,detected,expected,as_designed,problems,first_bad_seq
+edit_entry,Edit entry #122: downgrade a raised flag's severity to 'minor',hash chain,True,True,True,hash_mismatch,122.0
+delete_entry,Delete entry #122,hash chain,True,True,True,"chain_break, seq_gap",123.0
+insert_forged,Insert a forged entry after #122,hash chain,True,True,True,"chain_break, hash_mismatch, seq_gap",122.0
+reorder_entries,Swap entries #122 and #123,hash chain,True,True,True,"chain_break, seq_gap",122.0
+corrupt_line,Overwrite entry #122 with garbage,hash chain,True,True,True,bad_json,122.0
+edit_and_rehash_one_entry,Edit entry #122 AND recompute its hash (so it looks valid),hash chain (next entry's link breaks),True,True,True,chain_break,123.0
+rewrite_whole_chain,Edit entry #122 and recompute ALL later hashes,"hash chain only (no anchor, no key)",False,False,True,none,
+rewrite_whole_chain,Edit entry #122 and recompute ALL later hashes,chain + anchor,True,True,True,anchor_mismatch,487.0
+truncate_tail,Delete the last 5 entries (hide recent activity),"hash chain only (no anchor, no key)",False,False,True,none,
+truncate_tail,Delete the last 5 entries (hide recent activity),chain + anchor,True,True,True,truncated,487.0
+rewrite_whole_chain,"Edit entry #122, recompute ALL later hashes (attacker lacks the secret key)",chain + HMAC key,True,True,True,hash_mismatch,122.0

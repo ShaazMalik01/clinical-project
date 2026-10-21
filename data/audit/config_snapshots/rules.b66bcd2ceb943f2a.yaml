@@ -1,0 +1,123 @@
+rules:
+  - id: ELIG-AGE
+    name: Age outside eligibility range
+    description: Subject age must be within the protocol inclusion range.
+    severity: critical
+    category: PD
+    reference: "Protocol: inclusion criteria; ICH E6 4.5.1"
+    detects: [ineligible_enrolled]
+    type: bounded_field
+    params: {table: subjects, field: age, min_ref: eligibility.age_min, max_ref: eligibility.age_max}
+
+  - id: ELIG-SBP
+    name: Screening SBP above eligibility limit
+    description: Screening systolic BP must not exceed the protocol limit.
+    severity: critical
+    category: PD
+    reference: "Protocol: exclusion criteria; ICH E6 4.5.1"
+    detects: [ineligible_enrolled, value_outlier]
+    type: bounded_field
+    params: {table: vitals, field: sbp, visit: 1, max_ref: eligibility.screening_sbp_max}
+
+  - id: ELIG-CREAT
+    name: Screening creatinine above eligibility limit
+    description: Screening creatinine must not exceed the protocol limit (renal safety).
+    severity: critical
+    category: PD
+    reference: "Protocol: exclusion criteria; ICH E6 4.5.1"
+    detects: [ineligible_enrolled, value_outlier]
+    type: bounded_field
+    params: {table: labs, field: creatinine, visit: 1, max_ref: eligibility.screening_creatinine_max}
+
+  - id: CONS-01
+    name: Procedures performed before informed consent
+    description: Informed consent must be signed on or before the first study procedure.
+    severity: critical
+    category: PD
+    reference: "ICH E6 4.8.8; 21 CFR 50.20"
+    detects: [procedure_before_consent]
+    type: consent_before_procedure
+    params: {}
+
+  - id: VIS-WINDOW
+    name: Visit outside protocol window
+    description: Completed visits must fall within the allowed window around the planned day.
+    severity: minor
+    category: PD
+    reference: "Protocol: schedule of assessments"
+    detects: [visit_out_of_window]
+    type: visit_window
+    params: {major_excess_days: 5}
+
+  - id: VIS-MISSED
+    name: Missed visit
+    description: A scheduled visit was not performed although the subject remained in the study.
+    severity: major
+    category: PD
+    reference: "Protocol: schedule of assessments"
+    detects: [missed_visit]
+    type: missed_visit
+    params: {}
+
+  - id: DOSE-01
+    name: Dose differs from assigned arm
+    description: Dispensed dose must equal the protocol dose of the subject's randomised arm.
+    severity: major
+    category: PD
+    reference: "ICH E6 4.6.3; Protocol: dosing"
+    detects: [wrong_dose]
+    type: dose_vs_arm
+    params: {critical_above_mg: 25}
+
+  - id: SAFE-SAE-01
+    name: Late SAE report
+    description: Serious adverse events must be reported within the protocol deadline.
+    severity: critical
+    category: SAE
+    reference: "ICH E6 4.11.1; 21 CFR 312.64(b)"
+    detects: [late_sae_report]
+    type: sae_deadline
+    params: {}
+
+  - id: RANGE-VITALS
+    name: Physically implausible vital sign
+    description: Vital signs outside human-possible ranges indicate entry or unit errors.
+    severity: major
+    category: OUT
+    reference: "ICH E6 4.9.1 (accurate data)"
+    detects: [value_outlier]
+    type: plausible_range
+    params: {table: vitals, fields: [sbp, dbp, hr, weight_kg, temp_c]}
+
+  - id: RANGE-LABS
+    name: Physically implausible lab value
+    description: Lab values outside possible ranges indicate entry or unit errors.
+    severity: major
+    category: OUT
+    reference: "ICH E6 4.9.1 (accurate data)"
+    detects: [value_outlier]
+    type: plausible_range
+    params: {table: labs, fields: [alt, creatinine, glucose, hemoglobin]}
+
+  - id: CROSS-BP
+    name: Diastolic BP not below systolic BP
+    description: Cross-field consistency check on blood pressure.
+    severity: major
+    category: OUT
+    reference: "ICH E6 4.9.1 (accurate data)"
+    detects: [value_outlier]
+    type: cross_field_bp
+    params: {}
+
+meta_rules:
+  - id: META-SUBJ-REPEAT
+    name: Subject with repeated deviations
+    type: repeat_subject
+    params: {min_deviations: 3}
+    action: "Prioritise source-data verification (SDV) for this subject"
+
+  - id: META-SITE-HOTSPOT
+    name: Site with abnormally many critical deviations
+    type: site_hotspot
+    params: {min_critical: 5, ratio_to_median: 3.0}
+    action: "Trigger targeted on-site visit / for-cause audit review"

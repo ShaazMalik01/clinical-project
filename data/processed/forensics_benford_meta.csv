@@ -1,0 +1,6 @@
+field,n,p1,p99,span_ratio,suitable,status
+alt,4106,11.405000000000001,57.99499999999998,5.0850504164839965,False,not suitable: range too narrow (P99/P1 = 5.1 < 100)
+creatinine,4106,0.57,1.21,2.1228070175438596,False,not suitable: range too narrow (P99/P1 = 2.1 < 100)
+glucose,4106,69.30499999999999,117.3,1.692518577303225,False,not suitable: range too narrow (P99/P1 = 1.7 < 100)
+hemoglobin,4106,11.6,16.4,1.4137931034482758,False,not suitable: range too narrow (P99/P1 = 1.4 < 100)
+crp,4106,0.13,78.78149999999985,606.0115384615373,True,applied

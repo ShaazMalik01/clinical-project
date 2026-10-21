@@ -1,0 +1,8 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    { "label": "Run tests", "type": "shell", "command": "python -m pytest -q", "group": "test" },
+    { "label": "Build everything", "type": "shell", "command": "python run_all.py", "problemMatcher": [] },
+    { "label": "Start dashboard", "type": "shell", "command": "python -m streamlit run app/streamlit_app.py", "problemMatcher": [] }
+  ]
+}

@@ -1,0 +1,51 @@
+trial_id: CTX-301
+title: "Phase III randomized double-blind antihypertensive drug vs placebo"
+
+arms:
+  Placebo:   {dose_mg: 0}
+  Drug_10mg: {dose_mg: 10}
+  Drug_20mg: {dose_mg: 20}
+arm_weights: [0.34, 0.33, 0.33]
+
+eligibility:
+  age_min: 18
+  age_max: 75
+  screening_sbp_max: 160
+  screening_creatinine_max: 1.5
+
+# day is relative to Baseline (Day 0); window is +/- days allowed
+visits:
+  - {num: 1,  name: Screening, day: -14, window: 3}
+  - {num: 2,  name: Baseline,  day: 0,   window: 0}
+  - {num: 3,  name: Week 2,    day: 14,  window: 3}
+  - {num: 4,  name: Week 4,    day: 28,  window: 3}
+  - {num: 5,  name: Week 6,    day: 42,  window: 3}
+  - {num: 6,  name: Week 8,    day: 56,  window: 3}
+  - {num: 7,  name: Week 10,   day: 70,  window: 3}
+  - {num: 8,  name: Week 12,   day: 84,  window: 3}
+  - {num: 9,  name: Week 14,   day: 98,  window: 3}
+  - {num: 10, name: Week 16,   day: 112, window: 3}
+  - {num: 11, name: Week 18,   day: 126, window: 3}
+  - {num: 12, name: Week 20,   day: 140, window: 3}
+
+lab_visits: [1, 2, 4, 6, 8, 10, 12]
+dosing_visits: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+
+safety:
+  sae_report_deadline_days: 1
+
+# Physically possible ranges (values outside are data-entry errors)
+plausible_ranges:
+  sbp: [70, 250]
+  dbp: [40, 150]
+  hr: [30, 200]
+  weight_kg: [35, 250]
+  temp_c: [34, 42]
+  alt: [3, 1000]
+  creatinine: [0.2, 15]
+  glucose: [30, 600]
+  hemoglobin: [5, 22]
+
+# Used only by the simulator (true mean SBP change at full effect, mmHg)
+simulation:
+  sbp_effect_mmhg: {Placebo: -1.0, Drug_10mg: -8.0, Drug_20mg: -12.0}

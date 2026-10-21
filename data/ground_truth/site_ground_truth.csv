@@ -1,0 +1,13 @@
+site_id,profile,is_bad_site,category,n_injected_anomalies
+S01,clean,False,,19
+S02,clean,False,,13
+S03,clean,False,,23
+S04,clean,False,,16
+S05,clean,False,,8
+S06,fabrication,True,SITE,129
+S07,clean,False,,17
+S08,sloppy_process,True,SITE,70
+S09,clean,False,,10
+S10,clean,False,,20
+S11,clean,False,,18
+S12,clean,False,,16

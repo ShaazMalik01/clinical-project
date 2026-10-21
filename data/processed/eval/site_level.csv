@@ -1,0 +1,9 @@
+bad_site_type,system,rank,of,auc,tier
+sloppy_process,rules-only,1,12,1.0,
+sloppy_process,ML-only,2,12,0.9090909090909091,
+sloppy_process,forensics-only,4,12,0.36363636363636365,
+sloppy_process,hybrid (Bayesian risk model),1,12,1.0,FULL_AUDIT
+fabrication,rules-only,3,12,0.8181818181818181,
+fabrication,ML-only,1,12,1.0,
+fabrication,forensics-only,1,12,1.0,
+fabrication,hybrid (Bayesian risk model),2,12,0.9090909090909091,FULL_AUDIT

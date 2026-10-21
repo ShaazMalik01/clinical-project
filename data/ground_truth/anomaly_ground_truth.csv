@@ -1,0 +1,360 @@
+anomaly_id,category,subtype,severity,table,subject_id,site_id,visit_num,field,original_value,injected_value,granularity,record_id,related_subject_id,in_bad_site,description
+A0001,PD,ineligible_enrolled,critical,subjects,S01-021,S01,1.0,age,34,80,record,,,False,Violates eligibility criterion (age) at screening
+A0002,PD,ineligible_enrolled,critical,vitals,S09-012,S09,1.0,sbp,134,173,record,,,False,Violates eligibility criterion (sbp) at screening
+A0003,PD,ineligible_enrolled,critical,vitals,S08-028,S08,1.0,sbp,136,181,record,,,True,Violates eligibility criterion (sbp) at screening
+A0004,PD,ineligible_enrolled,critical,labs,S05-009,S05,1.0,creatinine,0.98,2.02,record,,,False,Violates eligibility criterion (creatinine) at screening
+A0005,PD,ineligible_enrolled,critical,labs,S08-049,S08,1.0,creatinine,0.76,2.3,record,,,True,Violates eligibility criterion (creatinine) at screening
+A0006,PD,ineligible_enrolled,critical,labs,S06-021,S06,1.0,creatinine,0.91,1.62,record,,,True,Violates eligibility criterion (creatinine) at screening
+A0007,PD,ineligible_enrolled,critical,vitals,S08-007,S08,1.0,sbp,129,164,record,,,True,Violates eligibility criterion (sbp) at screening
+A0008,PD,ineligible_enrolled,critical,labs,S08-011,S08,1.0,creatinine,0.6,1.69,record,,,True,Violates eligibility criterion (creatinine) at screening
+A0009,PD,ineligible_enrolled,critical,labs,S12-020,S12,1.0,creatinine,0.93,1.84,record,,,False,Violates eligibility criterion (creatinine) at screening
+A0010,PD,ineligible_enrolled,critical,labs,S10-037,S10,1.0,creatinine,1.03,1.99,record,,,False,Violates eligibility criterion (creatinine) at screening
+A0011,PD,ineligible_enrolled,critical,subjects,S06-036,S06,1.0,age,57,82,record,,,True,Violates eligibility criterion (age) at screening
+A0012,PD,ineligible_enrolled,critical,subjects,S01-005,S01,1.0,age,53,83,record,,,False,Violates eligibility criterion (age) at screening
+A0013,PD,ineligible_enrolled,critical,vitals,S06-066,S06,1.0,sbp,128,165,record,,,True,Violates eligibility criterion (sbp) at screening
+A0014,PD,ineligible_enrolled,critical,vitals,S12-017,S12,1.0,sbp,133,176,record,,,False,Violates eligibility criterion (sbp) at screening
+A0015,PD,ineligible_enrolled,critical,subjects,S09-015,S09,1.0,age,52,81,record,,,False,Violates eligibility criterion (age) at screening
+A0016,PD,procedure_before_consent,critical,consent,S08-018,S08,1.0,consent_date,2025-09-17,2025-09-20,record,,,True,Screening procedures done before informed consent
+A0017,PD,procedure_before_consent,critical,consent,S06-053,S06,1.0,consent_date,2025-06-12,2025-06-18,record,,,True,Screening procedures done before informed consent
+A0018,PD,procedure_before_consent,critical,consent,S08-005,S08,1.0,consent_date,2025-04-05,2025-04-08,record,,,True,Screening procedures done before informed consent
+A0019,PD,procedure_before_consent,critical,consent,S02-034,S02,1.0,consent_date,2025-04-09,2025-04-12,record,,,False,Screening procedures done before informed consent
+A0020,PD,procedure_before_consent,critical,consent,S08-029,S08,1.0,consent_date,2025-08-30,2025-09-04,record,,,True,Screening procedures done before informed consent
+A0021,PD,procedure_before_consent,critical,consent,S02-016,S02,1.0,consent_date,2025-05-30,2025-06-02,record,,,False,Screening procedures done before informed consent
+A0022,PD,procedure_before_consent,critical,consent,S08-027,S08,1.0,consent_date,2025-01-16,2025-01-21,record,,,True,Screening procedures done before informed consent
+A0023,PD,procedure_before_consent,critical,consent,S02-024,S02,1.0,consent_date,2025-02-11,2025-02-16,record,,,False,Screening procedures done before informed consent
+A0024,PD,procedure_before_consent,critical,consent,S08-022,S08,1.0,consent_date,2025-08-25,2025-08-29,record,,,True,Screening procedures done before informed consent
+A0025,PD,procedure_before_consent,critical,consent,S09-027,S09,1.0,consent_date,2025-01-13,2025-01-18,record,,,False,Screening procedures done before informed consent
+A0026,PD,procedure_before_consent,critical,consent,S06-039,S06,1.0,consent_date,2025-06-06,2025-06-11,record,,,True,Screening procedures done before informed consent
+A0027,PD,procedure_before_consent,critical,consent,S07-003,S07,1.0,consent_date,2025-02-13,2025-02-19,record,,,False,Screening procedures done before informed consent
+A0028,PD,procedure_before_consent,critical,consent,S08-006,S08,1.0,consent_date,2025-07-31,2025-08-05,record,,,True,Screening procedures done before informed consent
+A0029,PD,procedure_before_consent,critical,consent,S08-034,S08,1.0,consent_date,2025-09-06,2025-09-08,record,,,True,Screening procedures done before informed consent
+A0030,PD,procedure_before_consent,critical,consent,S03-042,S03,1.0,consent_date,2025-07-02,2025-07-09,record,,,False,Screening procedures done before informed consent
+A0031,FAB,copy_forward,major,vitals,S06-011,S06,8.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 7,record,,,True,Vitals identical to visit 7 (copy-paste)
+A0032,FAB,copy_forward,major,vitals,S06-011,S06,9.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 7,record,,,True,Vitals identical to visit 7 (copy-paste)
+A0033,FAB,copy_forward,major,vitals,S06-011,S06,10.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 7,record,,,True,Vitals identical to visit 7 (copy-paste)
+A0034,FAB,copy_forward,major,vitals,S06-011,S06,11.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 7,record,,,True,Vitals identical to visit 7 (copy-paste)
+A0035,FAB,copy_forward,major,vitals,S04-036,S04,7.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 6,record,,,False,Vitals identical to visit 6 (copy-paste)
+A0036,FAB,copy_forward,major,vitals,S04-036,S04,8.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 6,record,,,False,Vitals identical to visit 6 (copy-paste)
+A0037,FAB,copy_forward,major,vitals,S04-036,S04,9.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 6,record,,,False,Vitals identical to visit 6 (copy-paste)
+A0038,FAB,copy_forward,major,vitals,S04-036,S04,10.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 6,record,,,False,Vitals identical to visit 6 (copy-paste)
+A0039,FAB,copy_forward,major,vitals,S04-036,S04,11.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 6,record,,,False,Vitals identical to visit 6 (copy-paste)
+A0040,FAB,copy_forward,major,vitals,S01-014,S01,7.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 6,record,,,False,Vitals identical to visit 6 (copy-paste)
+A0041,FAB,copy_forward,major,vitals,S01-014,S01,8.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 6,record,,,False,Vitals identical to visit 6 (copy-paste)
+A0042,FAB,copy_forward,major,vitals,S01-014,S01,9.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 6,record,,,False,Vitals identical to visit 6 (copy-paste)
+A0043,FAB,copy_forward,major,vitals,S01-014,S01,10.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 6,record,,,False,Vitals identical to visit 6 (copy-paste)
+A0044,FAB,copy_forward,major,vitals,S06-020,S06,6.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 5,record,,,True,Vitals identical to visit 5 (copy-paste)
+A0045,FAB,copy_forward,major,vitals,S06-020,S06,7.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 5,record,,,True,Vitals identical to visit 5 (copy-paste)
+A0046,FAB,copy_forward,major,vitals,S06-020,S06,8.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 5,record,,,True,Vitals identical to visit 5 (copy-paste)
+A0047,FAB,copy_forward,major,vitals,S06-050,S06,5.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 4,record,,,True,Vitals identical to visit 4 (copy-paste)
+A0048,FAB,copy_forward,major,vitals,S06-050,S06,6.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 4,record,,,True,Vitals identical to visit 4 (copy-paste)
+A0049,FAB,copy_forward,major,vitals,S06-050,S06,7.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 4,record,,,True,Vitals identical to visit 4 (copy-paste)
+A0050,FAB,copy_forward,major,vitals,S06-050,S06,8.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 4,record,,,True,Vitals identical to visit 4 (copy-paste)
+A0051,FAB,copy_forward,major,vitals,S06-050,S06,9.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 4,record,,,True,Vitals identical to visit 4 (copy-paste)
+A0052,FAB,copy_forward,major,vitals,S06-046,S06,6.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 5,record,,,True,Vitals identical to visit 5 (copy-paste)
+A0053,FAB,copy_forward,major,vitals,S06-046,S06,7.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 5,record,,,True,Vitals identical to visit 5 (copy-paste)
+A0054,FAB,copy_forward,major,vitals,S06-046,S06,8.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 5,record,,,True,Vitals identical to visit 5 (copy-paste)
+A0055,FAB,copy_forward,major,vitals,S06-046,S06,9.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 5,record,,,True,Vitals identical to visit 5 (copy-paste)
+A0056,FAB,copy_forward,major,vitals,S06-046,S06,10.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 5,record,,,True,Vitals identical to visit 5 (copy-paste)
+A0057,FAB,copy_forward,major,vitals,S10-017,S10,8.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 7,record,,,False,Vitals identical to visit 7 (copy-paste)
+A0058,FAB,copy_forward,major,vitals,S10-017,S10,9.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 7,record,,,False,Vitals identical to visit 7 (copy-paste)
+A0059,FAB,copy_forward,major,vitals,S10-017,S10,10.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 7,record,,,False,Vitals identical to visit 7 (copy-paste)
+A0060,FAB,copy_forward,major,vitals,S10-017,S10,11.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 7,record,,,False,Vitals identical to visit 7 (copy-paste)
+A0061,FAB,copy_forward,major,vitals,S10-017,S10,12.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 7,record,,,False,Vitals identical to visit 7 (copy-paste)
+A0062,FAB,copy_forward,major,vitals,S08-048,S08,8.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 7,record,,,True,Vitals identical to visit 7 (copy-paste)
+A0063,FAB,copy_forward,major,vitals,S08-048,S08,9.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 7,record,,,True,Vitals identical to visit 7 (copy-paste)
+A0064,FAB,copy_forward,major,vitals,S08-048,S08,10.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 7,record,,,True,Vitals identical to visit 7 (copy-paste)
+A0065,FAB,copy_forward,major,vitals,S06-035,S06,8.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 7,record,,,True,Vitals identical to visit 7 (copy-paste)
+A0066,FAB,copy_forward,major,vitals,S06-035,S06,9.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 7,record,,,True,Vitals identical to visit 7 (copy-paste)
+A0067,FAB,copy_forward,major,vitals,S06-035,S06,10.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 7,record,,,True,Vitals identical to visit 7 (copy-paste)
+A0068,FAB,copy_forward,major,vitals,S06-035,S06,11.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 7,record,,,True,Vitals identical to visit 7 (copy-paste)
+A0069,FAB,copy_forward,major,vitals,S06-035,S06,12.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 7,record,,,True,Vitals identical to visit 7 (copy-paste)
+A0070,FAB,copy_forward,major,vitals,S03-024,S03,7.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 6,record,,,False,Vitals identical to visit 6 (copy-paste)
+A0071,FAB,copy_forward,major,vitals,S03-024,S03,8.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 6,record,,,False,Vitals identical to visit 6 (copy-paste)
+A0072,FAB,copy_forward,major,vitals,S03-024,S03,9.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 6,record,,,False,Vitals identical to visit 6 (copy-paste)
+A0073,FAB,copy_forward,major,vitals,S03-024,S03,10.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 6,record,,,False,Vitals identical to visit 6 (copy-paste)
+A0074,FAB,copy_forward,major,vitals,S06-037,S06,6.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 5,record,,,True,Vitals identical to visit 5 (copy-paste)
+A0075,FAB,copy_forward,major,vitals,S06-037,S06,7.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 5,record,,,True,Vitals identical to visit 5 (copy-paste)
+A0076,FAB,copy_forward,major,vitals,S06-037,S06,8.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 5,record,,,True,Vitals identical to visit 5 (copy-paste)
+A0077,FAB,copy_forward,major,vitals,S06-037,S06,9.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 5,record,,,True,Vitals identical to visit 5 (copy-paste)
+A0078,FAB,copy_forward,major,vitals,S06-037,S06,10.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 5,record,,,True,Vitals identical to visit 5 (copy-paste)
+A0079,FAB,copy_forward,major,vitals,S11-018,S11,8.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 7,record,,,False,Vitals identical to visit 7 (copy-paste)
+A0080,FAB,copy_forward,major,vitals,S11-018,S11,9.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 7,record,,,False,Vitals identical to visit 7 (copy-paste)
+A0081,FAB,copy_forward,major,vitals,S11-018,S11,10.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 7,record,,,False,Vitals identical to visit 7 (copy-paste)
+A0082,FAB,copy_forward,major,vitals,S11-018,S11,11.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 7,record,,,False,Vitals identical to visit 7 (copy-paste)
+A0083,FAB,copy_forward,major,vitals,S10-019,S10,7.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 6,record,,,False,Vitals identical to visit 6 (copy-paste)
+A0084,FAB,copy_forward,major,vitals,S10-019,S10,8.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 6,record,,,False,Vitals identical to visit 6 (copy-paste)
+A0085,FAB,copy_forward,major,vitals,S10-019,S10,9.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 6,record,,,False,Vitals identical to visit 6 (copy-paste)
+A0086,FAB,copy_forward,major,vitals,S10-019,S10,10.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 6,record,,,False,Vitals identical to visit 6 (copy-paste)
+A0087,FAB,copy_forward,major,vitals,S10-019,S10,11.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 6,record,,,False,Vitals identical to visit 6 (copy-paste)
+A0088,FAB,copy_forward,major,vitals,S06-060,S06,5.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 4,record,,,True,Vitals identical to visit 4 (copy-paste)
+A0089,FAB,copy_forward,major,vitals,S06-060,S06,6.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 4,record,,,True,Vitals identical to visit 4 (copy-paste)
+A0090,FAB,copy_forward,major,vitals,S06-060,S06,7.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 4,record,,,True,Vitals identical to visit 4 (copy-paste)
+A0091,FAB,copy_forward,major,vitals,S06-060,S06,8.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 4,record,,,True,Vitals identical to visit 4 (copy-paste)
+A0092,FAB,copy_forward,major,vitals,S06-058,S06,10.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 9,record,,,True,Vitals identical to visit 9 (copy-paste)
+A0093,FAB,copy_forward,major,vitals,S06-058,S06,11.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 9,record,,,True,Vitals identical to visit 9 (copy-paste)
+A0094,FAB,copy_forward,major,vitals,S06-058,S06,12.0,sbp|dbp|hr|weight_kg|temp_c,,copy of visit 9,record,,,True,Vitals identical to visit 9 (copy-paste)
+A0095,FAB,low_variance,major,vitals,S04-054,S04,,sbp|dbp|hr,,values within +/-1 of constant,subject,,,False,Implausibly constant vitals across all visits
+A0096,FAB,low_variance,major,vitals,S06-059,S06,,sbp|dbp|hr,,values within +/-1 of constant,subject,,,True,Implausibly constant vitals across all visits
+A0097,FAB,low_variance,major,vitals,S06-014,S06,,sbp|dbp|hr,,values within +/-1 of constant,subject,,,True,Implausibly constant vitals across all visits
+A0098,FAB,low_variance,major,vitals,S06-005,S06,,sbp|dbp|hr,,values within +/-1 of constant,subject,,,True,Implausibly constant vitals across all visits
+A0099,FAB,low_variance,major,vitals,S12-059,S12,,sbp|dbp|hr,,values within +/-1 of constant,subject,,,False,Implausibly constant vitals across all visits
+A0100,FAB,low_variance,major,vitals,S06-063,S06,,sbp|dbp|hr,,values within +/-1 of constant,subject,,,True,Implausibly constant vitals across all visits
+A0101,FAB,low_variance,major,vitals,S07-013,S07,,sbp|dbp|hr,,values within +/-1 of constant,subject,,,False,Implausibly constant vitals across all visits
+A0102,FAB,low_variance,major,vitals,S07-036,S07,,sbp|dbp|hr,,values within +/-1 of constant,subject,,,False,Implausibly constant vitals across all visits
+A0103,FAB,low_variance,major,vitals,S06-015,S06,,sbp|dbp|hr,,values within +/-1 of constant,subject,,,True,Implausibly constant vitals across all visits
+A0104,FAB,low_variance,major,vitals,S11-035,S11,,sbp|dbp|hr,,values within +/-1 of constant,subject,,,False,Implausibly constant vitals across all visits
+A0105,FAB,low_variance,major,vitals,S12-035,S12,,sbp|dbp|hr,,values within +/-1 of constant,subject,,,False,Implausibly constant vitals across all visits
+A0106,FAB,low_variance,major,vitals,S05-026,S05,,sbp|dbp|hr,,values within +/-1 of constant,subject,,,False,Implausibly constant vitals across all visits
+A0107,FAB,digit_preference,major,vitals,S11-019,S11,,sbp|dbp|hr,,rounded to multiples of 10/5,subject,,,False,Terminal-digit preference (values rounded)
+A0108,FAB,digit_preference,major,vitals,S07-037,S07,,sbp|dbp|hr,,rounded to multiples of 10/5,subject,,,False,Terminal-digit preference (values rounded)
+A0109,FAB,digit_preference,major,vitals,S05-007,S05,,sbp|dbp|hr,,rounded to multiples of 10/5,subject,,,False,Terminal-digit preference (values rounded)
+A0110,FAB,digit_preference,major,vitals,S06-045,S06,,sbp|dbp|hr,,rounded to multiples of 10/5,subject,,,True,Terminal-digit preference (values rounded)
+A0111,FAB,digit_preference,major,vitals,S11-021,S11,,sbp|dbp|hr,,rounded to multiples of 10/5,subject,,,False,Terminal-digit preference (values rounded)
+A0112,FAB,digit_preference,major,vitals,S06-025,S06,,sbp|dbp|hr,,rounded to multiples of 10/5,subject,,,True,Terminal-digit preference (values rounded)
+A0113,FAB,digit_preference,major,vitals,S06-067,S06,,sbp|dbp|hr,,rounded to multiples of 10/5,subject,,,True,Terminal-digit preference (values rounded)
+A0114,FAB,digit_preference,major,vitals,S07-029,S07,,sbp|dbp|hr,,rounded to multiples of 10/5,subject,,,False,Terminal-digit preference (values rounded)
+A0115,FAB,digit_preference,major,vitals,S09-008,S09,,sbp|dbp|hr,,rounded to multiples of 10/5,subject,,,False,Terminal-digit preference (values rounded)
+A0116,FAB,digit_preference,major,vitals,S06-031,S06,,sbp|dbp|hr,,rounded to multiples of 10/5,subject,,,True,Terminal-digit preference (values rounded)
+A0117,FAB,digit_preference,major,vitals,S06-054,S06,,sbp|dbp|hr,,rounded to multiples of 10/5,subject,,,True,Terminal-digit preference (values rounded)
+A0118,FAB,digit_preference,major,vitals,S06-042,S06,,sbp|dbp|hr,,rounded to multiples of 10/5,subject,,,True,Terminal-digit preference (values rounded)
+A0119,FAB,digit_preference,major,vitals,S06-028,S06,,sbp|dbp|hr,,rounded to multiples of 10/5,subject,,,True,Terminal-digit preference (values rounded)
+A0120,FAB,digit_preference,major,vitals,S04-025,S04,,sbp|dbp|hr,,rounded to multiples of 10/5,subject,,,False,Terminal-digit preference (values rounded)
+A0121,FAB,digit_preference,major,vitals,S06-026,S06,,sbp|dbp|hr,,rounded to multiples of 10/5,subject,,,True,Terminal-digit preference (values rounded)
+A0122,FAB,duplicate_subject,critical,subjects,S06-068,S06,,subject_id,S06-017,S06-068,subject,,S06-017,True,"Near-duplicate of S06-017 (same demographics, ~same vitals)"
+A0123,FAB,duplicate_subject,critical,subjects,S04-056,S04,,subject_id,S04-015,S04-056,subject,,S04-015,False,"Near-duplicate of S04-015 (same demographics, ~same vitals)"
+A0124,FAB,duplicate_subject,critical,subjects,S01-059,S01,,subject_id,S01-028,S01-059,subject,,S01-028,False,"Near-duplicate of S01-028 (same demographics, ~same vitals)"
+A0125,FAB,duplicate_subject,critical,subjects,S09-029,S09,,subject_id,S06-033,S09-029,subject,,S06-033,False,"Near-duplicate of S06-033 (same demographics, ~same vitals)"
+A0126,FAB,duplicate_subject,critical,subjects,S06-069,S06,,subject_id,S06-049,S06-069,subject,,S06-049,True,"Near-duplicate of S06-049 (same demographics, ~same vitals)"
+A0127,FAB,duplicate_subject,critical,subjects,S11-040,S11,,subject_id,S11-031,S11-040,subject,,S11-031,False,"Near-duplicate of S11-031 (same demographics, ~same vitals)"
+A0128,FAB,duplicate_subject,critical,subjects,S06-070,S06,,subject_id,S06-044,S06-070,subject,,S06-044,True,"Near-duplicate of S06-044 (same demographics, ~same vitals)"
+A0129,FAB,duplicate_subject,critical,subjects,S04-057,S04,,subject_id,S06-013,S04-057,subject,,S06-013,False,"Near-duplicate of S06-013 (same demographics, ~same vitals)"
+A0130,PD,visit_out_of_window,major,visits,S08-032,S08,9.0,actual_date,2025-09-22,2025-09-14,record,,,True,Visit moved -8 days (window +/-3)
+A0131,PD,visit_out_of_window,major,visits,S01-046,S01,5.0,actual_date,2025-03-23,2025-03-15,record,,,False,Visit moved -8 days (window +/-3)
+A0132,PD,visit_out_of_window,major,visits,S08-003,S08,4.0,actual_date,2025-02-23,2025-03-03,record,,,True,Visit moved +8 days (window +/-3)
+A0133,PD,visit_out_of_window,minor,visits,S08-033,S08,8.0,actual_date,2025-10-02,2025-10-09,record,,,True,Visit moved +7 days (window +/-3)
+A0134,PD,visit_out_of_window,major,visits,S08-043,S08,12.0,actual_date,2025-09-23,2025-10-01,record,,,True,Visit moved +8 days (window +/-3)
+A0135,PD,visit_out_of_window,major,visits,S08-032,S08,6.0,actual_date,2025-08-13,2025-08-04,record,,,True,Visit moved -9 days (window +/-3)
+A0136,PD,visit_out_of_window,minor,visits,S03-030,S03,7.0,actual_date,2025-10-18,2025-10-25,record,,,False,Visit moved +7 days (window +/-3)
+A0137,PD,visit_out_of_window,minor,visits,S11-037,S11,5.0,actual_date,2025-06-22,2025-06-29,record,,,False,Visit moved +7 days (window +/-3)
+A0138,PD,visit_out_of_window,major,visits,S08-056,S08,10.0,actual_date,2025-05-20,2025-05-28,record,,,True,Visit moved +8 days (window +/-3)
+A0139,PD,visit_out_of_window,major,visits,S03-054,S03,10.0,actual_date,2025-11-06,2025-11-15,record,,,False,Visit moved +9 days (window +/-3)
+A0140,PD,visit_out_of_window,major,visits,S04-053,S04,9.0,actual_date,2025-10-02,2025-09-23,record,,,False,Visit moved -9 days (window +/-3)
+A0141,PD,visit_out_of_window,major,visits,S11-016,S11,9.0,actual_date,2025-10-30,2025-10-21,record,,,False,Visit moved -9 days (window +/-3)
+A0142,PD,visit_out_of_window,major,visits,S03-016,S03,10.0,actual_date,2025-07-13,2025-07-05,record,,,False,Visit moved -8 days (window +/-3)
+A0143,PD,visit_out_of_window,major,visits,S08-056,S08,12.0,actual_date,2025-06-15,2025-06-07,record,,,True,Visit moved -8 days (window +/-3)
+A0144,PD,visit_out_of_window,major,visits,S11-011,S11,6.0,actual_date,2025-08-16,2025-08-26,record,,,False,Visit moved +10 days (window +/-3)
+A0145,PD,visit_out_of_window,major,visits,S08-031,S08,6.0,actual_date,2025-09-17,2025-09-25,record,,,True,Visit moved +8 days (window +/-3)
+A0146,PD,visit_out_of_window,major,visits,S12-028,S12,10.0,actual_date,2025-07-02,2025-06-23,record,,,False,Visit moved -9 days (window +/-3)
+A0147,PD,visit_out_of_window,minor,visits,S03-020,S03,5.0,actual_date,2025-03-08,2025-03-01,record,,,False,Visit moved -7 days (window +/-3)
+A0148,PD,visit_out_of_window,major,visits,S08-033,S08,12.0,actual_date,2025-11-28,2025-12-08,record,,,True,Visit moved +10 days (window +/-3)
+A0149,PD,visit_out_of_window,major,visits,S04-018,S04,5.0,actual_date,2025-03-29,2025-04-07,record,,,False,Visit moved +9 days (window +/-3)
+A0150,PD,visit_out_of_window,major,visits,S08-033,S08,7.0,actual_date,2025-09-18,2025-09-26,record,,,True,Visit moved +8 days (window +/-3)
+A0151,PD,visit_out_of_window,major,visits,S09-026,S09,3.0,actual_date,2025-09-22,2025-09-30,record,,,False,Visit moved +8 days (window +/-3)
+A0152,PD,visit_out_of_window,major,visits,S01-023,S01,6.0,actual_date,2025-04-08,2025-04-18,record,,,False,Visit moved +10 days (window +/-3)
+A0153,PD,visit_out_of_window,major,visits,S08-058,S08,8.0,actual_date,2025-04-17,2025-04-08,record,,,True,Visit moved -9 days (window +/-3)
+A0154,PD,visit_out_of_window,major,visits,S08-024,S08,5.0,actual_date,2025-03-24,2025-04-01,record,,,True,Visit moved +8 days (window +/-3)
+A0155,PD,visit_out_of_window,minor,visits,S08-014,S08,9.0,actual_date,2025-06-09,2025-06-16,record,,,True,Visit moved +7 days (window +/-3)
+A0156,PD,visit_out_of_window,major,visits,S01-045,S01,5.0,actual_date,2025-07-25,2025-08-03,record,,,False,Visit moved +9 days (window +/-3)
+A0157,PD,visit_out_of_window,major,visits,S07-017,S07,6.0,actual_date,2025-03-06,2025-02-25,record,,,False,Visit moved -9 days (window +/-3)
+A0158,PD,visit_out_of_window,major,visits,S08-054,S08,5.0,actual_date,2025-03-10,2025-03-02,record,,,True,Visit moved -8 days (window +/-3)
+A0159,PD,visit_out_of_window,major,visits,S03-001,S03,8.0,actual_date,2025-08-11,2025-08-20,record,,,False,Visit moved +9 days (window +/-3)
+A0160,PD,visit_out_of_window,major,visits,S01-036,S01,9.0,actual_date,2025-08-30,2025-08-20,record,,,False,Visit moved -10 days (window +/-3)
+A0161,PD,visit_out_of_window,minor,visits,S02-021,S02,5.0,actual_date,2025-05-20,2025-05-27,record,,,False,Visit moved +7 days (window +/-3)
+A0162,PD,visit_out_of_window,major,visits,S08-015,S08,8.0,actual_date,2025-06-17,2025-06-07,record,,,True,Visit moved -10 days (window +/-3)
+A0163,PD,visit_out_of_window,major,visits,S08-036,S08,7.0,actual_date,2025-06-08,2025-05-30,record,,,True,Visit moved -9 days (window +/-3)
+A0164,PD,visit_out_of_window,major,visits,S01-057,S01,7.0,actual_date,2025-10-09,2025-10-18,record,,,False,Visit moved +9 days (window +/-3)
+A0165,PD,visit_out_of_window,minor,visits,S08-052,S08,3.0,actual_date,2025-06-03,2025-06-10,record,,,True,Visit moved +7 days (window +/-3)
+A0166,PD,visit_out_of_window,major,visits,S08-052,S08,9.0,actual_date,2025-08-29,2025-09-07,record,,,True,Visit moved +9 days (window +/-3)
+A0167,PD,visit_out_of_window,minor,visits,S03-015,S03,9.0,actual_date,2025-05-08,2025-05-01,record,,,False,Visit moved -7 days (window +/-3)
+A0168,PD,visit_out_of_window,major,visits,S10-021,S10,6.0,actual_date,2025-04-27,2025-04-19,record,,,False,Visit moved -8 days (window +/-3)
+A0169,PD,visit_out_of_window,major,visits,S08-020,S08,9.0,actual_date,2025-11-16,2025-11-07,record,,,True,Visit moved -9 days (window +/-3)
+A0170,PD,missed_visit,major,visits,S08-023,S08,7.0,status,2025-05-16,Missed,record,,,True,Visit not performed; subject continued in study
+A0171,PD,missed_visit,major,visits,S07-053,S07,3.0,status,2025-06-17,Missed,record,,,False,Visit not performed; subject continued in study
+A0172,PD,missed_visit,major,visits,S01-032,S01,6.0,status,2025-09-15,Missed,record,,,False,Visit not performed; subject continued in study
+A0173,PD,missed_visit,major,visits,S08-041,S08,8.0,status,2025-09-23,Missed,record,,,True,Visit not performed; subject continued in study
+A0174,PD,missed_visit,major,visits,S08-004,S08,8.0,status,2025-05-12,Missed,record,,,True,Visit not performed; subject continued in study
+A0175,PD,missed_visit,major,visits,S08-041,S08,5.0,status,2025-08-14,Missed,record,,,True,Visit not performed; subject continued in study
+A0176,PD,missed_visit,major,visits,S01-042,S01,11.0,status,2025-10-25,Missed,record,,,False,Visit not performed; subject continued in study
+A0177,PD,missed_visit,major,visits,S08-039,S08,7.0,status,2025-10-21,Missed,record,,,True,Visit not performed; subject continued in study
+A0178,PD,missed_visit,major,visits,S08-043,S08,9.0,status,2025-08-14,Missed,record,,,True,Visit not performed; subject continued in study
+A0179,PD,missed_visit,major,visits,S10-021,S10,3.0,status,2025-03-19,Missed,record,,,False,Visit not performed; subject continued in study
+A0180,PD,missed_visit,major,visits,S10-031,S10,6.0,status,2025-05-06,Missed,record,,,False,Visit not performed; subject continued in study
+A0181,PD,missed_visit,major,visits,S03-053,S03,8.0,status,2025-08-16,Missed,record,,,False,Visit not performed; subject continued in study
+A0182,PD,missed_visit,major,visits,S07-015,S07,6.0,status,2025-03-12,Missed,record,,,False,Visit not performed; subject continued in study
+A0183,PD,missed_visit,major,visits,S10-036,S10,10.0,status,2026-01-10,Missed,record,,,False,Visit not performed; subject continued in study
+A0184,PD,missed_visit,major,visits,S08-035,S08,11.0,status,2025-09-29,Missed,record,,,True,Visit not performed; subject continued in study
+A0185,PD,missed_visit,major,visits,S02-038,S02,6.0,status,2025-03-23,Missed,record,,,False,Visit not performed; subject continued in study
+A0186,PD,missed_visit,major,visits,S08-009,S08,7.0,status,2025-08-19,Missed,record,,,True,Visit not performed; subject continued in study
+A0187,PD,missed_visit,major,visits,S08-044,S08,3.0,status,2025-06-30,Missed,record,,,True,Visit not performed; subject continued in study
+A0188,PD,missed_visit,major,visits,S08-013,S08,8.0,status,2025-06-24,Missed,record,,,True,Visit not performed; subject continued in study
+A0189,PD,missed_visit,major,visits,S08-058,S08,5.0,status,2025-03-01,Missed,record,,,True,Visit not performed; subject continued in study
+A0190,PD,missed_visit,major,visits,S08-013,S08,9.0,status,2025-07-11,Missed,record,,,True,Visit not performed; subject continued in study
+A0191,PD,missed_visit,major,visits,S08-044,S08,9.0,status,2025-09-18,Missed,record,,,True,Visit not performed; subject continued in study
+A0192,PD,missed_visit,major,visits,S08-052,S08,8.0,status,2025-08-12,Missed,record,,,True,Visit not performed; subject continued in study
+A0193,PD,missed_visit,major,visits,S08-002,S08,4.0,status,2025-10-31,Missed,record,,,True,Visit not performed; subject continued in study
+A0194,PD,missed_visit,major,visits,S05-014,S05,8.0,status,2025-07-13,Missed,record,,,False,Visit not performed; subject continued in study
+A0195,PD,missed_visit,major,visits,S07-024,S07,9.0,status,2025-06-21,Missed,record,,,False,Visit not performed; subject continued in study
+A0196,PD,missed_visit,major,visits,S08-009,S08,11.0,status,2025-10-18,Missed,record,,,True,Visit not performed; subject continued in study
+A0197,PD,missed_visit,major,visits,S12-063,S12,6.0,status,2025-09-22,Missed,record,,,False,Visit not performed; subject continued in study
+A0198,PD,missed_visit,major,visits,S08-046,S08,9.0,status,2025-06-09,Missed,record,,,True,Visit not performed; subject continued in study
+A0199,PD,missed_visit,major,visits,S09-022,S09,10.0,status,2025-09-08,Missed,record,,,False,Visit not performed; subject continued in study
+A0200,PD,wrong_dose,major,dosing,S02-033,S02,9.0,dose_mg,20,5,record,,,False,Dispensed 5 mg; protocol dose for arm is 20 mg
+A0201,PD,wrong_dose,major,dosing,S12-040,S12,9.0,dose_mg,20,10,record,,,False,Dispensed 10 mg; protocol dose for arm is 20 mg
+A0202,PD,wrong_dose,major,dosing,S03-020,S03,2.0,dose_mg,20,0,record,,,False,Dispensed 0 mg; protocol dose for arm is 20 mg
+A0203,PD,wrong_dose,critical,dosing,S03-016,S03,6.0,dose_mg,10,30,record,,,False,Dispensed 30 mg; protocol dose for arm is 10 mg
+A0204,PD,wrong_dose,critical,dosing,S08-019,S08,6.0,dose_mg,0,40,record,,,True,Dispensed 40 mg; protocol dose for arm is 0 mg
+A0205,PD,wrong_dose,major,dosing,S08-020,S08,7.0,dose_mg,20,5,record,,,True,Dispensed 5 mg; protocol dose for arm is 20 mg
+A0206,PD,wrong_dose,major,dosing,S02-038,S02,4.0,dose_mg,20,0,record,,,False,Dispensed 0 mg; protocol dose for arm is 20 mg
+A0207,PD,wrong_dose,major,dosing,S08-047,S08,11.0,dose_mg,0,20,record,,,True,Dispensed 20 mg; protocol dose for arm is 0 mg
+A0208,PD,wrong_dose,major,dosing,S08-024,S08,7.0,dose_mg,0,20,record,,,True,Dispensed 20 mg; protocol dose for arm is 0 mg
+A0209,PD,wrong_dose,major,dosing,S07-017,S07,7.0,dose_mg,10,0,record,,,False,Dispensed 0 mg; protocol dose for arm is 10 mg
+A0210,PD,wrong_dose,critical,dosing,S10-023,S10,7.0,dose_mg,0,40,record,,,False,Dispensed 40 mg; protocol dose for arm is 0 mg
+A0211,PD,wrong_dose,major,dosing,S08-054,S08,7.0,dose_mg,10,15,record,,,True,Dispensed 15 mg; protocol dose for arm is 10 mg
+A0212,PD,wrong_dose,major,dosing,S11-036,S11,2.0,dose_mg,20,10,record,,,False,Dispensed 10 mg; protocol dose for arm is 20 mg
+A0213,PD,wrong_dose,major,dosing,S04-002,S04,7.0,dose_mg,0,10,record,,,False,Dispensed 10 mg; protocol dose for arm is 0 mg
+A0214,PD,wrong_dose,major,dosing,S11-023,S11,4.0,dose_mg,20,10,record,,,False,Dispensed 10 mg; protocol dose for arm is 20 mg
+A0215,PD,wrong_dose,critical,dosing,S08-008,S08,9.0,dose_mg,20,40,record,,,True,Dispensed 40 mg; protocol dose for arm is 20 mg
+A0216,PD,wrong_dose,major,dosing,S05-015,S05,7.0,dose_mg,0,10,record,,,False,Dispensed 10 mg; protocol dose for arm is 0 mg
+A0217,PD,wrong_dose,critical,dosing,S03-029,S03,2.0,dose_mg,0,40,record,,,False,Dispensed 40 mg; protocol dose for arm is 0 mg
+A0218,PD,wrong_dose,critical,dosing,S01-044,S01,8.0,dose_mg,20,40,record,,,False,Dispensed 40 mg; protocol dose for arm is 20 mg
+A0219,PD,wrong_dose,major,dosing,S08-057,S08,10.0,dose_mg,10,20,record,,,True,Dispensed 20 mg; protocol dose for arm is 10 mg
+A0220,PD,wrong_dose,major,dosing,S11-002,S11,9.0,dose_mg,0,20,record,,,False,Dispensed 20 mg; protocol dose for arm is 0 mg
+A0221,PD,wrong_dose,major,dosing,S08-003,S08,7.0,dose_mg,0,20,record,,,True,Dispensed 20 mg; protocol dose for arm is 0 mg
+A0222,PD,wrong_dose,major,dosing,S10-041,S10,3.0,dose_mg,20,5,record,,,False,Dispensed 5 mg; protocol dose for arm is 20 mg
+A0223,PD,wrong_dose,critical,dosing,S08-037,S08,9.0,dose_mg,0,40,record,,,True,Dispensed 40 mg; protocol dose for arm is 0 mg
+A0224,PD,wrong_dose,major,dosing,S08-041,S08,3.0,dose_mg,0,5,record,,,True,Dispensed 5 mg; protocol dose for arm is 0 mg
+A0225,OUT,value_outlier,major,vitals,S05-023,S05,2.0,sbp,127,1270,record,,,False,sbp_extra_digit (physically impossible)
+A0226,OUT,value_outlier,minor,vitals,S12-003,S12,7.0,sbp,134,219,record,,,False,sbp_crisis (extreme but plausible)
+A0227,OUT,value_outlier,major,vitals,S12-006,S12,7.0,sbp,121,1210,record,,,False,sbp_extra_digit (physically impossible)
+A0228,OUT,value_outlier,major,vitals,S03-047,S03,7.0,sbp,111,1110,record,,,False,sbp_extra_digit (physically impossible)
+A0229,OUT,value_outlier,major,vitals,S09-007,S09,5.0,temp_c,36.4,97.5,record,,,False,temp_unit_mix (physically impossible)
+A0230,OUT,value_outlier,major,vitals,S08-019,S08,3.0,sbp,145,1450,record,,,True,sbp_extra_digit (physically impossible)
+A0231,OUT,value_outlier,major,vitals,S07-047,S07,5.0,weight_kg,62.5,625.0,record,,,False,weight_decimal_shift (physically impossible)
+A0232,OUT,value_outlier,major,vitals,S05-027,S05,10.0,sbp,123,1230,record,,,False,sbp_extra_digit (physically impossible)
+A0233,OUT,value_outlier,major,vitals,S03-021,S03,12.0,sbp,118,1180,record,,,False,sbp_extra_digit (physically impossible)
+A0234,OUT,value_outlier,minor,vitals,S09-007,S09,12.0,sbp,116,226,record,,,False,sbp_crisis (extreme but plausible)
+A0235,OUT,value_outlier,major,vitals,S07-014,S07,3.0,weight_kg,74.6,746.0,record,,,False,weight_decimal_shift (physically impossible)
+A0236,OUT,value_outlier,minor,vitals,S01-011,S01,3.0,sbp,128,230,record,,,False,sbp_crisis (extreme but plausible)
+A0237,OUT,value_outlier,major,vitals,S08-038,S08,5.0,temp_c,36.9,98.4,record,,,True,temp_unit_mix (physically impossible)
+A0238,OUT,value_outlier,major,vitals,S02-040,S02,7.0,hr,62,250,record,,,False,hr_extreme (physically impossible)
+A0239,OUT,value_outlier,major,labs,S04-048,S04,2.0,glucose,112.5,6.2,record,,,False,glucose_unit_mix (physically impossible)
+A0240,OUT,value_outlier,major,vitals,S02-031,S02,5.0,weight_kg,87.3,873.0,record,,,False,weight_decimal_shift (physically impossible)
+A0241,OUT,value_outlier,major,vitals,S10-029,S10,12.0,weight_kg,70.1,701.0,record,,,False,weight_decimal_shift (physically impossible)
+A0242,OUT,value_outlier,major,labs,S03-054,S03,2.0,glucose,95.0,5.3,record,,,False,glucose_unit_mix (physically impossible)
+A0243,OUT,value_outlier,major,vitals,S02-028,S02,1.0,temp_c,36.7,98.1,record,,,False,temp_unit_mix (physically impossible)
+A0244,OUT,value_outlier,major,vitals,S06-030,S06,7.0,hr,63,300,record,,,True,hr_extreme (physically impossible)
+A0245,OUT,value_outlier,minor,vitals,S03-008,S03,6.0,sbp,137,207,record,,,False,sbp_crisis (extreme but plausible)
+A0246,OUT,value_outlier,major,vitals,S08-021,S08,2.0,sbp,130,1300,record,,,True,sbp_extra_digit (physically impossible)
+A0247,OUT,value_outlier,major,vitals,S06-012,S06,11.0,sbp,130,1300,record,,,True,sbp_extra_digit (physically impossible)
+A0248,OUT,value_outlier,major,vitals,S07-035,S07,6.0,hr,67,300,record,,,False,hr_extreme (physically impossible)
+A0249,OUT,value_outlier,minor,labs,S12-046,S12,12.0,alt,26.2,345.6,record,,,False,alt_extreme (extreme but plausible)
+A0250,OUT,value_outlier,minor,labs,S08-054,S08,12.0,creatinine,0.97,4.04,record,,,True,creatinine_extreme (extreme but plausible)
+A0251,OUT,value_outlier,major,labs,S07-023,S07,10.0,glucose,86.3,4.8,record,,,False,glucose_unit_mix (physically impossible)
+A0252,OUT,value_outlier,major,vitals,S11-004,S11,3.0,weight_kg,64.9,649.0,record,,,False,weight_decimal_shift (physically impossible)
+A0253,OUT,value_outlier,major,vitals,S01-046,S01,9.0,sbp,111,1110,record,,,False,sbp_extra_digit (physically impossible)
+A0254,OUT,value_outlier,major,vitals,S03-055,S03,6.0,hr,74,250,record,,,False,hr_extreme (physically impossible)
+A0255,OUT,value_outlier,major,labs,S12-048,S12,2.0,glucose,83.8,4.7,record,,,False,glucose_unit_mix (physically impossible)
+A0256,OUT,value_outlier,minor,labs,S03-045,S03,12.0,creatinine,0.87,6.08,record,,,False,creatinine_extreme (extreme but plausible)
+A0257,OUT,value_outlier,major,vitals,S04-006,S04,7.0,temp_c,36.7,98.1,record,,,False,temp_unit_mix (physically impossible)
+A0258,OUT,value_outlier,minor,vitals,S02-020,S02,12.0,sbp,121,225,record,,,False,sbp_crisis (extreme but plausible)
+A0259,OUT,value_outlier,minor,labs,S02-031,S02,6.0,alt,35.7,463.6,record,,,False,alt_extreme (extreme but plausible)
+A0260,OUT,value_outlier,minor,vitals,S02-003,S02,9.0,sbp,106,219,record,,,False,sbp_crisis (extreme but plausible)
+A0261,OUT,value_outlier,major,vitals,S11-030,S11,2.0,sbp,118,1180,record,,,False,sbp_extra_digit (physically impossible)
+A0262,OUT,value_outlier,major,vitals,S07-057,S07,11.0,hr,66,250,record,,,False,hr_extreme (physically impossible)
+A0263,OUT,value_outlier,minor,vitals,S12-047,S12,5.0,sbp,117,223,record,,,False,sbp_crisis (extreme but plausible)
+A0264,OUT,value_outlier,minor,labs,S04-051,S04,12.0,creatinine,0.9,4.28,record,,,False,creatinine_extreme (extreme but plausible)
+A0265,OUT,value_outlier,major,vitals,S12-015,S12,10.0,sbp,112,1120,record,,,False,sbp_extra_digit (physically impossible)
+A0266,OUT,value_outlier,major,vitals,S06-008,S06,9.0,temp_c,36.8,98.2,record,,,True,temp_unit_mix (physically impossible)
+A0267,OUT,value_outlier,major,vitals,S03-022,S03,1.0,temp_c,36.9,98.4,record,,,False,temp_unit_mix (physically impossible)
+A0268,OUT,value_outlier,major,vitals,S10-007,S10,10.0,sbp,121,1210,record,,,False,sbp_extra_digit (physically impossible)
+A0269,OUT,value_outlier,major,vitals,S07-020,S07,5.0,temp_c,36.5,97.7,record,,,False,temp_unit_mix (physically impossible)
+A0270,SAE,late_sae_report,critical,adverse_events,S08-004,S08,,report_date,deadline 2025-07-01 00:00:00,2025-07-07,record,AE-L0001,,True,SAE reported 7 days after onset (deadline 1 day)
+A0271,SAE,late_sae_report,critical,adverse_events,S04-010,S04,,report_date,deadline 2025-12-06 00:00:00,2025-12-09,record,AE-L0002,,False,SAE reported 4 days after onset (deadline 1 day)
+A0272,SAE,late_sae_report,critical,adverse_events,S08-009,S08,,report_date,deadline 2025-07-04 00:00:00,2025-07-15,record,AE-L0003,,True,SAE reported 12 days after onset (deadline 1 day)
+A0273,SAE,late_sae_report,critical,adverse_events,S09-020,S09,,report_date,deadline 2025-03-28 00:00:00,2025-04-09,record,AE-L0004,,False,SAE reported 13 days after onset (deadline 1 day)
+A0274,SAE,late_sae_report,critical,adverse_events,S06-033,S06,,report_date,deadline 2025-06-13 00:00:00,2025-06-15,record,AE-L0005,,True,SAE reported 3 days after onset (deadline 1 day)
+A0275,SAE,late_sae_report,critical,adverse_events,S01-036,S01,,report_date,deadline 2025-06-03 00:00:00,2025-06-12,record,AE-L0006,,False,SAE reported 10 days after onset (deadline 1 day)
+A0276,SAE,late_sae_report,critical,adverse_events,S08-041,S08,,report_date,deadline 2025-08-10 00:00:00,2025-08-13,record,AE-L0007,,True,SAE reported 4 days after onset (deadline 1 day)
+A0277,SAE,late_sae_report,critical,adverse_events,S12-057,S12,,report_date,deadline 2025-07-18 00:00:00,2025-07-31,record,AE-L0008,,False,SAE reported 14 days after onset (deadline 1 day)
+A0278,SAE,late_sae_report,critical,adverse_events,S12-044,S12,,report_date,deadline 2025-12-27 00:00:00,2026-01-07,record,AE-L0009,,False,SAE reported 12 days after onset (deadline 1 day)
+A0279,SAE,late_sae_report,critical,adverse_events,S11-034,S11,,report_date,deadline 2025-04-11 00:00:00,2025-04-25,record,AE-L0010,,False,SAE reported 15 days after onset (deadline 1 day)
+A0280,SAE,late_sae_report,critical,adverse_events,S01-022,S01,,report_date,deadline 2025-08-08 00:00:00,2025-08-18,record,AE-L0011,,False,SAE reported 11 days after onset (deadline 1 day)
+A0281,SAE,late_sae_report,critical,adverse_events,S03-021,S03,,report_date,deadline 2025-11-11 00:00:00,2025-11-13,record,AE-L0012,,False,SAE reported 3 days after onset (deadline 1 day)
+A0282,SAE,late_sae_report,critical,adverse_events,S08-044,S08,,report_date,deadline 2025-09-17 00:00:00,2025-09-28,record,AE-L0013,,True,SAE reported 12 days after onset (deadline 1 day)
+A0283,SAE,late_sae_report,critical,adverse_events,S12-027,S12,,report_date,deadline 2025-06-07 00:00:00,2025-06-15,record,AE-L0014,,False,SAE reported 9 days after onset (deadline 1 day)
+A0284,SAE,late_sae_report,critical,adverse_events,S07-011,S07,,report_date,deadline 2025-12-03 00:00:00,2025-12-11,record,AE-L0015,,False,SAE reported 9 days after onset (deadline 1 day)
+A0285,SAE,late_sae_report,critical,adverse_events,S05-014,S05,,report_date,deadline 2025-09-01 00:00:00,2025-09-13,record,AE-L0016,,False,SAE reported 13 days after onset (deadline 1 day)
+A0286,SAE,late_sae_report,critical,adverse_events,S08-013,S08,,report_date,deadline 2025-07-02 00:00:00,2025-07-12,record,AE-L0017,,True,SAE reported 11 days after onset (deadline 1 day)
+A0287,SAE,late_sae_report,critical,adverse_events,S11-031,S11,,report_date,deadline 2025-07-29 00:00:00,2025-08-10,record,AE-L0018,,False,SAE reported 13 days after onset (deadline 1 day)
+A0288,SAE,late_sae_report,critical,adverse_events,S10-030,S10,,report_date,deadline 2025-06-22 00:00:00,2025-07-06,record,AE-L0019,,False,SAE reported 15 days after onset (deadline 1 day)
+A0289,SAE,late_sae_report,critical,adverse_events,S08-017,S08,,report_date,deadline 2025-05-12 00:00:00,2025-05-18,record,AE-L0020,,True,SAE reported 7 days after onset (deadline 1 day)
+A0290,FAB,fabricated_labs,major,labs,S06-020,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0291,FAB,fabricated_labs,major,labs,S06-004,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0292,FAB,fabricated_labs,major,labs,S06-051,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0293,FAB,fabricated_labs,major,labs,S06-047,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0294,FAB,fabricated_labs,major,labs,S06-007,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0295,FAB,fabricated_labs,major,labs,S06-040,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0296,FAB,fabricated_labs,major,labs,S06-048,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0297,FAB,fabricated_labs,major,labs,S06-018,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0298,FAB,fabricated_labs,major,labs,S06-046,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0299,FAB,fabricated_labs,major,labs,S06-001,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0300,FAB,fabricated_labs,major,labs,S06-012,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0301,FAB,fabricated_labs,major,labs,S06-002,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0302,FAB,fabricated_labs,major,labs,S06-034,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0303,FAB,fabricated_labs,major,labs,S06-022,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0304,FAB,fabricated_labs,major,labs,S06-033,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0305,FAB,fabricated_labs,major,labs,S06-016,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0306,FAB,fabricated_labs,major,labs,S06-003,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0307,FAB,fabricated_labs,major,labs,S06-017,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0308,FAB,fabricated_labs,major,labs,S06-036,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0309,FAB,fabricated_labs,major,labs,S06-063,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0310,FAB,fabricated_labs,major,labs,S06-019,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0311,FAB,fabricated_labs,major,labs,S06-028,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0312,FAB,fabricated_labs,major,labs,S06-039,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0313,FAB,fabricated_labs,major,labs,S06-049,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0314,FAB,fabricated_labs,major,labs,S06-061,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0315,FAB,fabricated_labs,major,labs,S06-006,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0316,FAB,fabricated_labs,major,labs,S06-009,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0317,FAB,fabricated_labs,major,labs,S06-045,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0318,FAB,fabricated_labs,major,labs,S06-056,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0319,FAB,fabricated_labs,major,labs,S06-005,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0320,FAB,fabricated_labs,major,labs,S06-052,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0321,FAB,fabricated_labs,major,labs,S06-035,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0322,FAB,fabricated_labs,major,labs,S06-024,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0323,FAB,fabricated_labs,major,labs,S06-030,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0324,FAB,fabricated_labs,major,labs,S06-026,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0325,FAB,fabricated_labs,major,labs,S06-067,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0326,FAB,fabricated_labs,major,labs,S06-013,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0327,FAB,fabricated_labs,major,labs,S06-062,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0328,FAB,fabricated_labs,major,labs,S06-043,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0329,FAB,fabricated_labs,major,labs,S06-060,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0330,FAB,fabricated_labs,major,labs,S06-011,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0331,FAB,fabricated_labs,major,labs,S06-044,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0332,FAB,fabricated_labs,major,labs,S06-041,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0333,FAB,fabricated_labs,major,labs,S06-053,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0334,FAB,fabricated_labs,major,labs,S06-054,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0335,FAB,fabricated_labs,major,labs,S06-059,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0336,FAB,fabricated_labs,major,labs,S06-058,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0337,FAB,fabricated_labs,major,labs,S06-015,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0338,FAB,fabricated_labs,major,labs,S06-070,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0339,FAB,fabricated_labs,major,labs,S06-066,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0340,FAB,fabricated_labs,major,labs,S06-029,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0341,FAB,fabricated_labs,major,labs,S06-064,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0342,FAB,fabricated_labs,major,labs,S06-068,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0343,FAB,fabricated_labs,major,labs,S06-014,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0344,FAB,fabricated_labs,major,labs,S06-032,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0345,FAB,fabricated_labs,major,labs,S06-021,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0346,FAB,fabricated_labs,major,labs,S06-055,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0347,FAB,fabricated_labs,major,labs,S06-038,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0348,FAB,fabricated_labs,major,labs,S06-023,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0349,FAB,fabricated_labs,major,labs,S06-069,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0350,FAB,fabricated_labs,major,labs,S06-050,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0351,FAB,fabricated_labs,major,labs,S06-027,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0352,FAB,fabricated_labs,major,labs,S06-037,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0353,FAB,fabricated_labs,major,labs,S06-010,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0354,FAB,fabricated_labs,major,labs,S06-057,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0355,FAB,fabricated_labs,major,labs,S06-042,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0356,FAB,fabricated_labs,major,labs,S06-008,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0357,FAB,fabricated_labs,major,labs,S06-025,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0358,FAB,fabricated_labs,major,labs,S06-031,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford
+A0359,FAB,fabricated_labs,major,labs,S06-065,S06,,crp,,invented values (uniform first digits),subject,,,True,CRP values invented: first digits ~uniform instead of Benford

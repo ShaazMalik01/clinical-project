@@ -1,0 +1,112 @@
+seed: 42
+
+trial:
+  start_date: "2025-01-06"
+  enrollment_days: 270
+  n_sites: 12
+  n_subjects: 600
+  dropout_rate: 0.08
+  ae_rate_per_subject: 0.9
+  serious_ae_prob: 0.05
+
+injection:
+  site_boost: 8.0
+  counts:
+    ineligible_enrolled: 15
+    procedure_before_consent: 15
+    copy_forward: 15
+    low_variance: 12
+    digit_preference: 15
+    duplicate_subjects: 8
+    visit_out_of_window: 40
+    missed_visit: 30
+    wrong_dose: 25
+    value_outliers: 45
+    late_sae: 20
+
+ml:
+  weights: prior                 # prior | consensus | equal
+  prior_weights: {iforest: 0.40, mahal: 0.35, lof: 0.25}
+  contamination: {visit: 0.02, subject: 0.10}
+  iforest: {n_estimators: 300}
+  lof: {n_neighbors: 35}
+  mahalanobis: {support_fraction: 0.75}
+  site: {z_clip: 5.0}
+
+forensics:
+  plausible_filter: true
+  digit:
+    fields: [sbp, dbp, hr]
+    min_readings: 12
+    null_rate: auto
+  variance:
+    fields: [sbp, dbp, hr]
+    min_visits: 8
+    tail_df: 6
+  copy_forward:
+    fields: [sbp, dbp, hr, weight_kg, temp_c]
+  duplicates:
+    age_tol: 1
+    height_tol_cm: 1.0
+    bmi_tol: 0.5
+    min_shared_visits: 4
+    similarity_threshold: 0.75
+    ref_pairs: 3000
+    lab_fields: [alt, creatinine, glucose, hemoglobin, crp]
+  benford:
+    candidate_fields: [alt, creatinine, glucose, hemoglobin, crp]
+    min_n: 300
+    min_span_ratio: 100
+    aggregate: first
+    mc_sims: 20000
+  scoring:
+    s0: 1.3
+    tau: 2.0
+    deterministic_evidence: 6.0
+    high_q: 0.05
+    medium_q: 0.20
+    subject_nominal_p: 0.01
+
+risk:
+  weights:
+    deviation_rate: 0.15
+    critical_deviation_rate: 0.20
+    sae_late: 0.15
+    forensic_rate: 0.20
+    anomaly_rate: 0.10
+    missing_data: 0.10
+    query_rate: 0.10
+  floors:
+    deviation_rate: 0.05
+    critical_deviation_rate: 0.02
+    query_rate: 0.01
+    sae_late: 0.10
+    missing_data: 0.01
+    anomaly_rate: 0.02
+    forensic_rate: 0.04
+  critical_class: [critical_deviation_rate, sae_late, forensic_rate]
+  kri:
+    deviation: {severities: [major, critical], exclude_rules: [VIS-MISSED]}
+  prior:
+    outlier_prob: 0.15
+    kappa_min: 4.0
+    kappa_cap_factor: 1.0
+  posterior:
+    mc_draws: 8000
+    ci_level: 0.95
+    tolerance: 1.5
+    excess_cap: 5.0
+  tiers:
+    remote_review:   {index: 0.15, prob: 0.50}
+    targeted_onsite: {index: 0.30, prob: 0.70}
+    full_audit:      {index: 0.60, prob: 0.80}
+  triggers: {mult: 3.0, prob: 0.95, min_kris_breached: 2}
+
+feedback:
+  rounds: 8
+  n_sims: 20
+  label_noise: 0.05
+  explore: 0.3
+  learner: {C: 0.5, min_labels: 8, n0: 20.0, review_cost: 1.0, miss_cost: 4.0}
+  visit:   {pool_frac: 0.06, batch: 20}
+  subject: {pool_frac: 0.25, batch: 8}

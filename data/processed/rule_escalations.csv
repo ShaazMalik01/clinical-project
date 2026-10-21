@@ -1,0 +1,8 @@
+rule_id,rule_name,level,entity_id,site_id,score,detail,action
+META-SUBJ-REPEAT,Subject with repeated deviations,subject,S08-009,S08,3.0,"3 deviations (1 critical): SAFE-SAE-01, VIS-MISSED",Prioritise source-data verification (SDV) for this subject
+META-SUBJ-REPEAT,Subject with repeated deviations,subject,S08-013,S08,3.0,"3 deviations (1 critical): SAFE-SAE-01, VIS-MISSED",Prioritise source-data verification (SDV) for this subject
+META-SUBJ-REPEAT,Subject with repeated deviations,subject,S08-033,S08,3.0,3 deviations (0 critical): VIS-WINDOW,Prioritise source-data verification (SDV) for this subject
+META-SUBJ-REPEAT,Subject with repeated deviations,subject,S08-041,S08,4.0,"4 deviations (1 critical): DOSE-01, SAFE-SAE-01, VIS-MISSED",Prioritise source-data verification (SDV) for this subject
+META-SUBJ-REPEAT,Subject with repeated deviations,subject,S08-044,S08,3.0,"3 deviations (1 critical): SAFE-SAE-01, VIS-MISSED",Prioritise source-data verification (SDV) for this subject
+META-SUBJ-REPEAT,Subject with repeated deviations,subject,S08-052,S08,3.0,"3 deviations (0 critical): VIS-MISSED, VIS-WINDOW",Prioritise source-data verification (SDV) for this subject
+META-SITE-HOTSPOT,Site with abnormally many critical deviations,site,S08,S08,0.345,20 critical deviations / 58 subjects (rate 0.34 vs median 0.07),Trigger targeted on-site visit / for-cause audit review

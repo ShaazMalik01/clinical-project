@@ -1,0 +1,4 @@
+fusion,tp,fp,fn,precision,recall,f1,n_flagged
+any detector (OR),210,56,0,0.7894736842105263,1.0,0.8823529411764706,266
+at least 2 agree,93,0,117,1.0,0.44285714285714284,0.6138613861386139,93
+all 3 agree,0,0,210,,0.0,0.0,0
