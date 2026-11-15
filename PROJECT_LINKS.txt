@@ -1,0 +1,5 @@
+Project Title: Clinical Trial Compliance Monitoring and Anomaly Detection System
+Problem Statement ID: SIH26046
+Registration Numbers of All Group Members: 12513387, 12511274
+GitHub Repository Link: https://github.com/ShaazMalik01/clinical-project.git
+Live Deployed Project Link: https://clinical-project-3b4hwfgtzdngpyyhfeinyk.streamlit.app/
