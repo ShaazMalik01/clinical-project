@@ -1,5 +1,9 @@
 # Clinical Trial Compliance Monitoring and Anomaly Detection System
 
+**Problem Statement ID:** SIH26046  
+**Team:** Mohd Shaaz (12513387), Lakshay Khurana (12511274)  
+**Live deployment:** https://clinical-project-3b4hwfgtzdngpyyhfeinyk.streamlit.app/
+
 An explainable, hybrid monitoring system for a (synthetic) clinical trial. It combines a **rule-based expert system**,
 **unsupervised machine learning**, **data-integrity forensics** and **Bayesian site-risk scoring**, explains every alert in
 plain English, learns from a human monitor's feedback, and records everything in a **tamper-evident, hash-chained audit
